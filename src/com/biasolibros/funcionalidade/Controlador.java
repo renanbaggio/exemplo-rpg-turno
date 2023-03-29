@@ -17,6 +17,7 @@ public class Controlador {
 
 	public Controlador() {
 		carregarDados();
+		System.out.println("Bem-vindo, " + heroi.getNome() + "! Fique atento, inimigos se aproximam...");
 	}
 
 	public void carregarDados() {
@@ -33,7 +34,7 @@ public class Controlador {
 		
 		while (!batalha.isBatalhaConcluida() && !batalha.isTentativaDeFugaBemSucedida()) {
 			try {
-				System.out.println("--------------------------------------------------------------");
+				System.out.println("---------------------------------------------------------------------");
 				System.out.print("O que deseja fazer? Digite: '1' para atacar; '2' para fugir; → ");
 				String valorInformado = scanner.next();
 				
@@ -50,12 +51,12 @@ public class Controlador {
 	private void processarResultadoDaBatalha(Batalha batalha) {
 		if (batalha.isBatalhaConcluida()) {
 			if (heroi.isDerrotado()) {
-				System.out.println("Você foi derrotado...");
+				System.out.println("Você foi derrotado...".toUpperCase());
 			} else {
-				System.out.println("Você venceu a batalha!");
+				System.out.println("Você venceu a batalha!".toUpperCase());
 			}
 		} else if (batalha.isTentativaDeFugaBemSucedida()) {
-			System.out.println("Você conseguiu fugir!");
+			System.out.println("Você conseguiu fugir!".toUpperCase());
 		}
 	}
 

@@ -34,7 +34,7 @@ public class Heroi implements ParticipanteDeBatalha {
 		int dano = calculadoraDeDano.calcularDanoComum(getForca(), getAtaque(), inimigo.getDefesa());
 		inimigo.receberDano(dano);
 		
-		System.out.println("Você atacou " + inimigo.getNome() + " e causou " + dano + " de dano! Status → " + inimigo.getStatus());
+		System.out.println("Você atacou " + inimigo.getNome() + " e causou " + dano + " de dano!...Result. → " + inimigo.getStatus());
 	}
 
 	@Override

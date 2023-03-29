@@ -30,7 +30,7 @@ public class InimigoComum implements ParticipanteDeBatalha {
 		int dano = calculadoraDeDano.calcularDanoComum(getForca(), getAtaque(), heroi.getDefesa());
 		heroi.receberDano(dano);
 		
-		System.out.println(getNome() + " atacou você e causou " + dano + " de dano! Status → " + heroi.getStatus());
+		System.out.println(getNome() + " atacou você e causou " + dano + " de dano!...Result. → " + heroi.getStatus());
 	}
 
 	public void receberDano(int dano) {

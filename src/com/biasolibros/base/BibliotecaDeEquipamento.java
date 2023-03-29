@@ -22,7 +22,7 @@ public class BibliotecaDeEquipamento {
 		
 		arma = new Arma();
 		arma.setNome("Espada Longa");
-		arma.setBonusDeAtaque(10);
+		arma.setBonusDeAtaque(13);
 		listaArmaExistente.add(arma);
 		
 		Armadura armadura = new Armadura();

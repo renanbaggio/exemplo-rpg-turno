@@ -40,7 +40,7 @@ public class Batalha {
 			}
 		}
 		inimigosNestaBatalha = mapQuantidadeDeCadaInimigo.toString();
-		System.out.println("--------------------------------------------------------------");
+		System.out.println("---------------------------------------------------------------------");
 		System.out.println("Iniciando nova batalha! Inimigos: " + inimigosNestaBatalha);
 	}
 
