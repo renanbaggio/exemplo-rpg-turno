@@ -69,7 +69,7 @@ public class Batalha {
 		// Realizando o ataque de cada participante
 		for (ParticipanteDeBatalha participante : listaDeParticipante) {
 			
-			if (participante.isAcaoRealizada()) {
+			if (participante.isAcaoRealizada() || participante.isDerrotado()) {
 				continue; // Pula para o próximo da lista
 			}
 			if (participante instanceof InimigoComum) {
@@ -90,6 +90,7 @@ public class Batalha {
 			tentativaDeFugaBemSucedida = true;
 			return;
 		}
+		System.out.println("Não conseguiu fugir...");
 		heroi.setAcaoRealizada(true);
 		realizarAtaque();
 	}
